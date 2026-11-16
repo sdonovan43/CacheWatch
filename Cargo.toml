@@ -1,0 +1,22 @@
+[package]
+name = "cache-watch"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "cache-watch"
+path = "src/main.rs"
+
+[dependencies]
+tokio = { version = "1.0", features = ["full"] }
+reqwest = { version = "0.11", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+rusqlite = { version = "0.32", features = ["chrono"] }
+uuid = { version = "1.0", features = ["v4"] }
+log = "0.4"
+env_logger = "0.10"
+sysinfo = "0.30"
+chrono = { version = "0.4", features = ["serde"] }
+async-trait = "0.1"
+crossterm = "0.27"
